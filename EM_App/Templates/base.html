@@ -1,0 +1,44 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="{% static 'base.css' %}">
+    {% block head %}
+    {% endblock %}
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar-home">
+            <ul>
+                <li>
+                    <a href="dashboard">EVENT DASHBOARD</a>
+                </li>
+                <li>
+                    <a href="participant">PARTICIPANTS REGISTRATION</a>
+                </li>
+                <li>
+                    <a href="event">EVENT REGISTRATION</a>
+                </li>
+                <div>
+                    <a id="logo" href="index">EVENT MANAGER WEB-APP</a>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    {% block body %}
+    {% endblock %}
+
+    <!-- Footer -->
+    <div class="footer-home">
+        <ul class="copyright-home">
+            <li>Copyright@2022</li>
+            <li id="developer">Developer: Harsh Patel</li>
+        </ul>
+    </div>
+</body>
+
+</html>
